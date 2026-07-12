@@ -1,0 +1,16 @@
+/* Base layout styles. Full design polish added in the Aesthetics step. */
+.site-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+main {
+  padding: 1rem 2rem;
+}

@@ -1,0 +1,165 @@
+{
+  "properties": [
+    {
+      "id": "prop1",
+      "type": "House",
+      "bedrooms": 3,
+      "price": 750000,
+      "tenure": "Freehold",
+      "postcodeArea": "BR5",
+      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "shortDescription": "Attractive three bedroom semi-detached family home near Petts Wood station.",
+      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises two receptions, a fitted kitchen/breakfast room and conservatory. It also benefits from a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior throughout.",
+      "images": [
+        "images/prop1/img1.jpg",
+        "images/prop1/img2.jpg",
+        "images/prop1/img3.jpg",
+        "images/prop1/img4.jpg",
+        "images/prop1/img5.jpg",
+        "images/prop1/img6.jpg",
+        "images/prop1/img7.jpg"
+      ],
+      "floorplan": "images/prop1/floorplan.jpg",
+      "mapQuery": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "added": { "month": "October", "day": 12, "year": 2022 }
+    },
+    {
+      "id": "prop2",
+      "type": "Flat",
+      "bedrooms": 2,
+      "price": 399995,
+      "tenure": "Freehold",
+      "postcodeArea": "BR6",
+      "location": "Crofton Road, Orpington BR6",
+      "shortDescription": "Two double bedroom, two bathroom garden flat, five years old.",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and integrated appliances including a dishwasher and washing machine. This large open plan area benefits from bi-folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite with a shower attachment over the bath. There is also a separate wet room. Being only five years old, the apartment is still under a 10 year building guarantee.",
+      "images": [
+        "images/prop2/img1.jpg",
+        "images/prop2/img2.jpg",
+        "images/prop2/img3.jpg",
+        "images/prop2/img4.jpg",
+        "images/prop2/img5.jpg",
+        "images/prop2/img6.jpg",
+        "images/prop2/img7.jpg"
+      ],
+      "floorplan": "images/prop2/floorplan.jpg",
+      "mapQuery": "Crofton Road, Orpington BR6",
+      "added": { "month": "September", "day": 14, "year": 2022 }
+    },
+    {
+      "id": "prop3",
+      "type": "House",
+      "bedrooms": 5,
+      "price": 1250000,
+      "tenure": "Freehold",
+      "postcodeArea": "NW1",
+      "location": "Gloucester Avenue, Primrose Hill, London NW1",
+      "shortDescription": "Substantial five bedroom family house moments from Primrose Hill.",
+      "description": "A substantial five bedroom Victorian townhouse in the heart of Primrose Hill, offering elegant, light-filled reception rooms, high ceilings and period features throughout. The lower ground floor is arranged as an open plan kitchen/dining/family room opening onto a private south facing garden. The upper floors provide five well-proportioned bedrooms and three bathrooms. The property is moments from Primrose Hill park, Regent's Park and the boutiques and cafes of Regent's Park Road.",
+      "images": [
+        "images/prop3/img1.jpg",
+        "images/prop3/img2.jpg",
+        "images/prop3/img3.jpg",
+        "images/prop3/img4.jpg",
+        "images/prop3/img5.jpg",
+        "images/prop3/img6.jpg",
+        "images/prop3/img7.jpg"
+      ],
+      "floorplan": "images/prop3/floorplan.jpg",
+      "mapQuery": "Gloucester Avenue, Primrose Hill, London NW1",
+      "added": { "month": "March", "day": 15, "year": 2023 }
+    },
+    {
+      "id": "prop4",
+      "type": "Flat",
+      "bedrooms": 1,
+      "price": 210000,
+      "tenure": "Leasehold",
+      "postcodeArea": "SW1",
+      "location": "Vauxhall Bridge Road, Westminster, London SW1",
+      "shortDescription": "Compact one bedroom flat ideal for first time buyers or investors.",
+      "description": "A well presented one bedroom flat on the second floor of a purpose-built block, ideal for a first time buyer or investor. The property comprises a bright reception room, separate fitted kitchen, double bedroom and a modern shower room. The building has a lift and is within easy walking distance of Victoria and Pimlico stations, with excellent transport links across central London.",
+      "images": [
+        "images/prop4/img1.jpg",
+        "images/prop4/img2.jpg",
+        "images/prop4/img3.jpg",
+        "images/prop4/img4.jpg",
+        "images/prop4/img5.jpg",
+        "images/prop4/img6.jpg",
+        "images/prop4/img7.jpg"
+      ],
+      "floorplan": "images/prop4/floorplan.jpg",
+      "mapQuery": "Vauxhall Bridge Road, Westminster, London SW1",
+      "added": { "month": "June", "day": 1, "year": 2021 }
+    },
+    {
+      "id": "prop5",
+      "type": "House",
+      "bedrooms": 4,
+      "price": 625000,
+      "tenure": "Freehold",
+      "postcodeArea": "BR1",
+      "location": "Widmore Road, Bromley BR1",
+      "shortDescription": "Four bedroom family home close to Bromley town centre schools.",
+      "description": "A spacious four bedroom detached family home close to Bromley town centre and within the catchment of several well regarded schools. The ground floor offers a large through lounge, separate dining room and a modern fitted kitchen with utility area. Upstairs are four good sized bedrooms and a family bathroom, with the master benefiting from an en-suite shower room. Outside there is a private rear garden and off-street parking for two cars.",
+      "images": [
+        "images/prop5/img1.jpg",
+        "images/prop5/img2.jpg",
+        "images/prop5/img3.jpg",
+        "images/prop5/img4.jpg",
+        "images/prop5/img5.jpg",
+        "images/prop5/img6.jpg",
+        "images/prop5/img7.jpg"
+      ],
+      "floorplan": "images/prop5/floorplan.jpg",
+      "mapQuery": "Widmore Road, Bromley BR1",
+      "added": { "month": "January", "day": 20, "year": 2024 }
+    },
+    {
+      "id": "prop6",
+      "type": "Flat",
+      "bedrooms": 3,
+      "price": 480000,
+      "tenure": "Leasehold",
+      "postcodeArea": "E1",
+      "location": "Brick Lane, Shoreditch, London E1",
+      "shortDescription": "Modern three bedroom warehouse-style apartment in Shoreditch.",
+      "description": "A stylish three bedroom apartment set within a converted warehouse building in the heart of Shoreditch. The open plan living space features exposed brickwork, high ceilings and large factory-style windows. The kitchen is fitted with integrated appliances and there are three well-proportioned bedrooms and two bathrooms. The apartment is moments from Brick Lane's markets, restaurants and bars, with excellent transport links from Liverpool Street and Shoreditch High Street stations.",
+      "images": [
+        "images/prop6/img1.jpg",
+        "images/prop6/img2.jpg",
+        "images/prop6/img3.jpg",
+        "images/prop6/img4.jpg",
+        "images/prop6/img5.jpg",
+        "images/prop6/img6.jpg",
+        "images/prop6/img7.jpg"
+      ],
+      "floorplan": "images/prop6/floorplan.jpg",
+      "mapQuery": "Brick Lane, Shoreditch, London E1",
+      "added": { "month": "November", "day": 5, "year": 2025 }
+    },
+    {
+      "id": "prop7",
+      "type": "House",
+      "bedrooms": 2,
+      "price": 340000,
+      "tenure": "Freehold",
+      "postcodeArea": "BR2",
+      "location": "Oakley Road, Bromley BR2",
+      "shortDescription": "Charming two bedroom cottage-style house with a private garden.",
+      "description": "A charming two bedroom cottage-style house tucked away on a quiet residential road. The ground floor offers a cosy lounge with a feature fireplace and a separate fitted kitchen/diner leading out to a private, low-maintenance rear garden. Upstairs there are two comfortable bedrooms and a family bathroom. The property benefits from gas central heating, double glazing throughout and is within walking distance of local shops and bus routes into Bromley town centre.",
+      "images": [
+        "images/prop7/img1.jpg",
+        "images/prop7/img2.jpg",
+        "images/prop7/img3.jpg",
+        "images/prop7/img4.jpg",
+        "images/prop7/img5.jpg",
+        "images/prop7/img6.jpg",
+        "images/prop7/img7.jpg"
+      ],
+      "floorplan": "images/prop7/floorplan.jpg",
+      "mapQuery": "Oakley Road, Bromley BR2",
+      "added": { "month": "August", "day": 30, "year": 2023 }
+    }
+  ]
+}
