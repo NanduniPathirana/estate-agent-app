@@ -1,0 +1,46 @@
+.property-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #1a6d5a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.property-summary {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.property-summary-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a6d5a;
+  margin: 0 0 0.3rem;
+}
+
+.property-summary-location {
+  font-size: 1.4rem;
+  margin: 0 0 0.4rem;
+}
+
+.property-summary-meta {
+  color: #555;
+  margin: 0;
+}
+
+.tabs-placeholder {
+  color: #888;
+  font-style: italic;
+}
