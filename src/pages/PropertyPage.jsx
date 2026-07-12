@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import propertiesData from '../data/properties.json'
 import PropertyGallery from '../components/PropertyGallery.jsx'
+import PropertyTabs from '../components/PropertyTabs.jsx'
 import { formatPrice } from '../utils/formatUtils.js'
 import './PropertyPage.css'
 
@@ -36,6 +37,13 @@ function PropertyPage() {
           {property.tenure} · {property.postcodeArea}
         </p>
       </div>
+
+      <PropertyTabs
+        description={property.description}
+        floorplan={property.floorplan}
+        mapQuery={property.mapQuery}
+      />
+
     </div>
   )
 }
