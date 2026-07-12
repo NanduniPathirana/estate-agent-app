@@ -1,0 +1,44 @@
+.site-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.favourites-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #1a6d5a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #1a6d5a;
+  border-radius: 20px;
+  padding: 0.4rem 0.9rem;
+}
+
+.favourites-badge:hover {
+  background: #eaf5f2;
+}
+
+.favourites-badge-count {
+  background: #1a6d5a;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  padding: 0 4px;
+}

@@ -43,7 +43,7 @@ function FavouritesSidebar() {
     >
       
       <div className="favourites-header">
-        <h2>Favourites</h2>
+        <h2>Favourites {favouriteProperties.length > 0 && `(${favouriteProperties.length})`}</h2>
         {favouriteProperties.length > 0 && (
           <button
             type="button"

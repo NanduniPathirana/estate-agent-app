@@ -1,6 +1,7 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import SearchPage from './pages/SearchPage.jsx'
 import PropertyPage from './pages/PropertyPage.jsx'
+import Header from './components/Header.jsx'
 import { FavouritesProvider } from './context/FavouritesContext.jsx'
 import './App.css'
 
@@ -11,9 +12,7 @@ function App() {
   return (
     <FavouritesProvider>
       <div className="app">
-        <header className="site-header">
-          <Link to="/" className="site-title">Estate Agent</Link>
-        </header>
+        <Header />
 
         <main>
           <Routes>
