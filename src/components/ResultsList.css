@@ -1,0 +1,14 @@
+.results-count {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.results-empty {
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}

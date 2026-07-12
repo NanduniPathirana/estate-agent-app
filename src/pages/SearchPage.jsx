@@ -1,5 +1,8 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import SearchForm from '../components/SearchForm.jsx'
+import ResultsList from '../components/ResultsList.jsx'
+import propertiesData from '../data/properties.json'
+import { filterProperties } from '../utils/searchUtils.js'
 
 // SearchPage: main landing page containing the property search form,
 // the search results, and the favourites sidebar.
@@ -8,17 +11,18 @@ import SearchForm from '../components/SearchForm.jsx'
 function SearchPage() {
   const [criteria, setCriteria] = useState(null)
 
+  const results = useMemo(
+    () => filterProperties(propertiesData.properties, criteria),
+    [criteria]
+  )
+
   return (
     <div className="search-page">
       <h1>Find Your Next Home</h1>
 
       <SearchForm onSearch={setCriteria} />
 
-      {criteria && (
-        <p className="search-debug">
-          Search submitted — results display coming in the next step.
-        </p>
-      )}
+      <ResultsList properties={results} />
     </div>
   )
 }
