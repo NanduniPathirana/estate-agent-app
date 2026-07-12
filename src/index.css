@@ -1,3 +1,6 @@
+/* React Widgets base styling - required for DropdownList, NumberPicker, DatePicker, Combobox */
+@import 'react-widgets/styles.css';
+
 /* Global reset and base typography */
 * {
   box-sizing: border-box;
