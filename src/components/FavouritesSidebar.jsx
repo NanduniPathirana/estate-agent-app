@@ -9,7 +9,7 @@ import './FavouritesSidebar.css'
 // be dragged here to add it to favourites. Remove/clear functionality is
 // added in the next step.
 function FavouritesSidebar() {
-  const { favourites, addFavourite } = useFavourites()
+  const { favourites, addFavourite, removeFavourite, clearFavourites } = useFavourites()
 
   const favouriteProperties = propertiesData.properties.filter((p) =>
     favourites.includes(p.id)
@@ -26,6 +26,14 @@ function FavouritesSidebar() {
     if (droppedId) addFavourite(droppedId)
   }
 
+  // Marks the drag as originating from the favourites list, so that
+  // whichever element it gets dropped on elsewhere in the page knows to
+  // remove it rather than add it again.
+  const handleItemDragStart = (e, id) => {
+    e.dataTransfer.setData('text/plain', id)
+    e.dataTransfer.setData('application/x-source', 'favourites')
+  }
+
   return (
     <aside
       className="favourites-sidebar"
@@ -33,7 +41,19 @@ function FavouritesSidebar() {
       onDrop={handleDrop}
       aria-label="Favourite properties"
     >
-      <h2>Favourites</h2>
+      
+      <div className="favourites-header">
+        <h2>Favourites</h2>
+        {favouriteProperties.length > 0 && (
+          <button
+            type="button"
+            className="favourites-clear-btn"
+            onClick={clearFavourites}
+          >
+            Clear all
+          </button>
+        )}
+      </div>
 
       {favouriteProperties.length === 0 ? (
         <p className="favourites-empty">
@@ -42,18 +62,35 @@ function FavouritesSidebar() {
       ) : (
         <ul className="favourites-list">
           {favouriteProperties.map((property) => (
-            <li key={property.id} className="favourites-item">
+            <li key={property.id} className="favourites-item" draggable
+              onDragStart={(e) => handleItemDragStart(e, property.id)}>
+              
               <Link to={`/property/${property.id}`} className="favourites-item-link">
+                
                 <img
                   src={`${import.meta.env.BASE_URL}${property.images[0]}`}
                   alt=""
                   className="favourites-item-image"
                 />
+                
                 <span className="favourites-item-text">
                   <span className="favourites-item-location">{property.location}</span>
                   <span className="favourites-item-price">{formatPrice(property.price)}</span>
                 </span>
+
               </Link>
+
+              <button
+                type="button"
+                className="favourites-remove-btn"
+                onClick={() => removeFavourite(property.id)}
+                aria-label={`Remove ${property.location} from favourites`}
+                title="Remove from favourites"
+              >
+                &times;
+              </button>
+
+
             </li>
           ))}
         </ul>
