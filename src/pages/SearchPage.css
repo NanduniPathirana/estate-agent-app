@@ -4,3 +4,14 @@
   gap: 1.5rem;
   align-items: start;
 }
+
+/* Responsive breakpoint: iPad landscape width (1024px) and below.
+   Below this width, the two-column layout (results + favourites sidebar)
+   no longer has room to breathe, so we switch to a single stacked column
+   with the favourites list appearing below the results instead of beside
+   them. This keeps both sections fully readable on tablets and phones. */
+@media (max-width: 1024px) {
+  .search-page-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -47,3 +47,20 @@
   border: 0;
   border-radius: 6px;
 }
+
+/* Responsive: iPad landscape width (1024px) and below - shrink tab padding
+   and map height to fit smaller viewports without excessive scrolling. */
+@media (max-width: 1024px) {
+  .property-tabs {
+    padding: 1rem;
+  }
+
+  .property-tabs .react-tabs__tab {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-map-iframe {
+    height: 280px;
+  }
+}

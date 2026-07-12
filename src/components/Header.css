@@ -6,6 +6,17 @@
   justify-content: space-between;
 }
 
+/* Responsive: small phones - not enough width for title + badge side by
+   side without cramping, so stack them and reduce side padding. */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1rem;
+  }
+}
+
 .site-title {
   font-size: 1.5rem;
   font-weight: bold;

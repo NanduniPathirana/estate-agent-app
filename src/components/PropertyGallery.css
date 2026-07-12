@@ -121,6 +121,35 @@
   right: -60px;
 }
 
+/* Responsive: iPad landscape width (1024px) and below - there's no spare
+   horizontal room for nav buttons to sit outside the image, so pull them
+   inside over the image edges instead, and shrink the gallery thumbnails
+   and main image height to suit smaller screens. */
+@media (max-width: 1024px) {
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+
+  .gallery-main-image {
+    max-height: 280px;
+  }
+
+  .gallery-thumb-btn {
+    flex: 0 0 70px;
+    height: 50px;
+  }
+}
+
 .lightbox-counter {
   position: absolute;
   bottom: -35px;

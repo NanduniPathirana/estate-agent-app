@@ -17,6 +17,33 @@
   gap: 1rem 1.5rem;
 }
 
+/* Responsive: iPad landscape width (1024px) and below - drop to a 2-column
+   grid so each field keeps enough width for its widget to stay usable. */
+@media (max-width: 1024px) {
+  .search-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-form {
+    padding: 1.25rem;
+  }
+}
+
+/* Small phones - single column, full-width fields */
+@media (max-width: 600px) {
+  .search-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form-actions {
+    flex-direction: column;
+  }
+
+  .search-form-actions .btn {
+    width: 100%;
+  }
+}
+
 .form-field {
   display: flex;
   flex-direction: column;

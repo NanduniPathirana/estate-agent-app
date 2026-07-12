@@ -72,3 +72,16 @@
   color: #888;
   font-style: italic;
 }
+
+/* Responsive: iPad landscape width (1024px) and below - the price/favourite
+   button row can get tight next to a long location title, so let it wrap
+   and reduce the map height so it doesn't dominate a short viewport. */
+@media (max-width: 1024px) {
+  .property-summary-top-row {
+    flex-wrap: wrap;
+  }
+
+  .property-summary-location {
+    font-size: 1.2rem;
+  }
+}
