@@ -1,8 +1,10 @@
 import { useState, useMemo } from 'react'
 import SearchForm from '../components/SearchForm.jsx'
 import ResultsList from '../components/ResultsList.jsx'
+import FavouritesSidebar from '../components/FavouritesSidebar.jsx'
 import propertiesData from '../data/properties.json'
 import { filterProperties } from '../utils/searchUtils.js'
+import './SearchPage.css'
 
 // SearchPage: main landing page containing the property search form,
 // the search results, and the favourites sidebar.
@@ -22,7 +24,12 @@ function SearchPage() {
 
       <SearchForm onSearch={setCriteria} />
 
-      <ResultsList properties={results} />
+      <div className="search-page-layout">
+        <div className="search-page-main">
+          <ResultsList properties={results} />
+        </div>
+        <FavouritesSidebar />
+      </div>
     </div>
   )
 }

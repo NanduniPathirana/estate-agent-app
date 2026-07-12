@@ -29,6 +29,34 @@
   flex: 1;
 }
 
+.property-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.favourite-btn {
+  background: #fff;
+  border: 1px solid #1a6d5a;
+  color: #1a6d5a;
+  border-radius: 5px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.favourite-btn:hover:not(:disabled) {
+  background: #eaf5f2;
+}
+
+.favourite-btn.favourited {
+  background: #1a6d5a;
+  color: #fff;
+  cursor: default;
+}
+
 .property-card-price {
   font-size: 1.3rem;
   font-weight: 700;
