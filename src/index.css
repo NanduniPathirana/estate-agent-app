@@ -1,6 +1,35 @@
 /* React Widgets base styling - required for DropdownList, NumberPicker, DatePicker, Combobox */
 @import 'react-widgets/styles.css';
 
+/*
+  Design tokens (CSS custom properties).
+  Centralising colour, spacing and radius values here means every
+  component references the same palette instead of repeating hex codes,
+  which keeps the whole site visually consistent.
+*/
+:root {
+  --color-primary: #1a6d5a;
+  --color-primary-dark: #145143;
+  --color-primary-light: #eaf5f2;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-border: #e0e0e0;
+  --color-background: #fafafa;
+  --color-danger: #c0392b;
+
+  --radius: 8px;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+  /* Two typefaces only, as required: a serif for headings (gives the
+     "estate agent" site some character and visual weight) and a clean
+     sans-serif for body text and UI controls (readability, familiarity).
+     Both are system fonts so no external font loading / CSP changes are
+     needed. */
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: 'Segoe UI', Arial, sans-serif;
+}
+
 /* Global reset and base typography */
 * {
   box-sizing: border-box;
@@ -8,11 +37,36 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #1a1a1a;
-  background-color: #fafafa;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 a {
   color: inherit;
+}
+
+/* Heading hierarchy: consistent font, weight, and spacing scale so
+   importance is signalled by size/weight rather than being arbitrary
+   per-page (Aesthetics requirement: proportional use of font sizes). */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1.25rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
 }

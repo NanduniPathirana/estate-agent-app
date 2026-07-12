@@ -15,9 +15,9 @@ function ResultsList({ properties }) {
 
   return (
     <div className="results-list">
-      <p className="results-count">
+      <h2 className="results-count">
         {properties.length} propert{properties.length === 1 ? 'y' : 'ies'} found
-      </p>
+      </h2>
       {properties.map((property) => (
         <PropertyCard key={property.id} property={property} />
       ))}
