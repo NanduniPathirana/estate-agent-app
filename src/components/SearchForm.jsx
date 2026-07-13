@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { DropdownList, NumberPicker, DatePicker, Combobox } from 'react-widgets'
+import { DropdownList, NumberPicker, Combobox } from 'react-widgets'
+import { dateToInputValue, inputValueToDate } from '../utils/dateUtils.js'
 import { PROPERTY_TYPES, POSTCODE_AREAS } from '../data/constants.js'
 import './SearchForm.css'
 
@@ -128,14 +129,20 @@ function SearchForm({ onSearch }) {
           />
         </label>
 
-        {/* Conditional date pickers depending on dateMode */}
+        {/* Conditional date pickers depending on dateMode.
+            Native <input type="date"> is used here instead of react-widgets'
+            DatePicker - the calendar popup in that widget wasn't reliably
+            committing the selected date back into the input, so a plain
+            native date input is used for correctness. The other four
+            fields above still use React Widgets components. */}
         {criteria.dateMode === 'after' && (
           <label className="form-field">
             <span>Added after</span>
-            <DatePicker
-              value={criteria.dateAfter}
-              onChange={(value) => updateField('dateAfter', value)}
-              placeholder="Choose a date"
+            <input
+              type="date"
+              className="native-date-input"
+              value={dateToInputValue(criteria.dateAfter)}
+              onChange={(e) => updateField('dateAfter', inputValueToDate(e.target.value))}
             />
           </label>
         )}
@@ -144,18 +151,20 @@ function SearchForm({ onSearch }) {
           <>
             <label className="form-field">
               <span>From</span>
-              <DatePicker
-                value={criteria.dateFrom}
-                onChange={(value) => updateField('dateFrom', value)}
-                placeholder="Start date"
+              <input
+                type="date"
+                className="native-date-input"
+                value={dateToInputValue(criteria.dateFrom)}
+                onChange={(e) => updateField('dateFrom', inputValueToDate(e.target.value))}
               />
             </label>
             <label className="form-field">
               <span>To</span>
-              <DatePicker
-                value={criteria.dateTo}
-                onChange={(value) => updateField('dateTo', value)}
-                placeholder="End date"
+              <input
+                type="date"
+                className="native-date-input"
+                value={dateToInputValue(criteria.dateTo)}
+                onChange={(e) => updateField('dateTo', inputValueToDate(e.target.value))}
               />
             </label>
           </>

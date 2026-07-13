@@ -57,6 +57,22 @@
   margin-bottom: 0.35rem;
 }
 
+.native-date-input {
+  font-family: var(--font-body, 'Segoe UI', Arial, sans-serif);
+  font-size: 0.95rem;
+  font-weight: normal;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background: #fff;
+}
+
+.native-date-input:focus {
+  outline: 2px solid #1a6d5a;
+  outline-offset: -1px;
+}
+
 .search-form-actions {
   margin-top: 1.5rem;
   display: flex;
