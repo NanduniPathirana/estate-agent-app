@@ -1,12 +1,13 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
+import { BASE_URL } from '../utils/env.js'
 import './PropertyTabs.css'
 
 // PropertyTabs: organizes the property's long description, floor plan
 // image, and an embedded Google Map into three tabs, so the detail page
 // stays compact rather than showing everything stacked at once.
 function PropertyTabs({ description, floorplan, mapQuery }) {
-  const base = import.meta.env.BASE_URL
+  const base = BASE_URL
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&output=embed`
 
   return (

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BASE_URL } from '../utils/env.js'
 import './PropertyGallery.css'
 
 // PropertyGallery: shows a large main image with a row of thumbnails below.
@@ -12,7 +13,7 @@ function PropertyGallery({ images, altText }) {
   const showPrev = () => setActiveIndex((i) => (i === 0 ? images.length - 1 : i - 1))
   const showNext = () => setActiveIndex((i) => (i === images.length - 1 ? 0 : i + 1))
 
-  const base = import.meta.env.BASE_URL
+  const base = BASE_URL
 
   return (
     <div className="property-gallery">

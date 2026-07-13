@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { formatPrice } from '../utils/formatUtils.js'
 import { useFavourites } from '../context/FavouritesContext.jsx'
+import { BASE_URL } from '../utils/env.js'
 import './PropertyCard.css'
 
 // PropertyCard: a single result in the search results list.
@@ -27,7 +28,7 @@ function PropertyCard({ property }) {
     <article className="property-card" draggable onDragStart={handleDragStart}>
       <Link to={`/property/${property.id}`} className="property-card-image-link">
         <img
-          src={`${import.meta.env.BASE_URL}${property.images[0]}`}
+          src={`${BASE_URL}${property.images[0]}`}
           alt={`${property.type} at ${property.location}`}
           className="property-card-image"
         />
@@ -62,7 +63,7 @@ function PropertyCard({ property }) {
         </Link>
 
       </div>
-      
+
     </article>
   )
 }

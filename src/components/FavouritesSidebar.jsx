@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useFavourites } from '../context/FavouritesContext.jsx'
 import propertiesData from '../data/properties.json'
 import { formatPrice } from '../utils/formatUtils.js'
+import { BASE_URL } from '../utils/env.js'
 import './FavouritesSidebar.css'
 
 // FavouritesSidebar: shown on the search page. Displays the current
